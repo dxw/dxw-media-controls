@@ -20,6 +20,26 @@ class Options implements \Dxw\Iguana\Registerable
             'key' => 'group_6f986aaed3444',
             'title' => 'Additional media settings',
             'fields' => [
+                [
+                    'key' => 'field_5f986ab76a819',
+                    'label' => 'User guidance',
+                    'name' => 'dxw_media_controls_guidance',
+                    'type' => 'wysiwyg',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => [
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ],
+                    'default_value' => 'It is recommended to use <strong>JPG</strong> or <strong>GIF</strong> filetypes for most images and to keep the file size as small as possible, for example between <strong>100-200 KB</strong>. Use <strong>medium</strong> rather than large versions in posts.',
+                    'media_upload' => 0,
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'maxlength' => 1024,
+                ]
             ],
             'location' => [
                 [
