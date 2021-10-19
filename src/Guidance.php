@@ -7,6 +7,12 @@ class Guidance implements \Dxw\Iguana\Registerable
     {
         if (get_field('dxw_media_show_guidance', 'option') && get_field('dxw_media_controls_guidance', 'option')) {
             add_action('pre-upload-ui', [$this, 'media_guidance']);
+            add_action( 'enqueue_block_editor_assets', function() {
+                wp_register_script('dxw-media-controls-script',
+                    plugins_url( 'assets/js/script.js', __FILE__ )
+                );
+                wp_enqueue_script('dxw-media-controls-script');
+            });
         }
     }
 
