@@ -21,6 +21,16 @@ class Options implements \Dxw\Iguana\Registerable
             'title' => 'Additional media settings',
             'fields' => [
                 [
+                    'key' => 'field_4f986ab76a808',
+                    'label' => 'Show user guidance',
+                    'name' => 'dxw_media_show_guidance',
+                    'type' => 'true_false',
+                    'default_value' => 0,
+                    'ui' => 1,
+                    'ui_on_text' => __('Yes', 'txtdomain'),
+                    'ui_off_text' => __('No', 'txtdomain'),
+                ],
+                [
                     'key' => 'field_5f986ab76a819',
                     'label' => 'User guidance',
                     'name' => 'dxw_media_controls_guidance',
