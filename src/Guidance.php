@@ -11,6 +11,11 @@ class Guidance implements \Dxw\Iguana\Registerable
                 wp_register_script('dxw-media-controls-script',
                     plugins_url( 'assets/js/script.js', __FILE__ )
                 );
+                wp_localize_script( 'dxw-media-controls-script', 'dxwMediaControls',
+                    array(
+                        'dxwMediaGuidance' => get_field('dxw_media_controls_guidance', 'option')
+                    )
+                );
                 wp_enqueue_script('dxw-media-controls-script');
             });
         }
