@@ -20,7 +20,6 @@
     "require-dev": {
         "dxw/phar-install": "^1.1",
         "dxw/php-cs-fixer-config": "^2.0",
-        "kahlan/kahlan": "^4.7",
         "vimeo/psalm": "^5.26"
     },
     "require": {
