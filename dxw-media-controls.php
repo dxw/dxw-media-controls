@@ -13,7 +13,7 @@
  * Plugin URI: https://github.com/dxw/dxw-media-controls
  * Description: Manage media uploading: file sizes and types with user guidance
  * Author: dxw
- * Version: 0.1.0
+ * Version: 1.0.0
  * Network: True
  */
 
