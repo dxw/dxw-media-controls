@@ -2,13 +2,17 @@
 
 namespace dxwMediaControls;
 
-class Options implements \Dxw\Iguana\Registerable
+final class Options implements \Dxw\Iguana\Registerable
 {
+	#[\Override]
 	public function register(): void
 	{
 		add_action('acf/init', [$this, 'acfInit']);
 	}
 
+	/**
+	 * @psalm-suppress PossiblyUnusedMethod
+	 */
 	public function acfInit(): void
 	{
 		acf_add_options_sub_page([
